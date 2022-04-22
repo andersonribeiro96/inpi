@@ -1,4 +1,4 @@
-package com.inpi.verify.domain;
+package com.inpi.verify.domain.revista;
 
 import lombok.Data;
 

@@ -1,6 +1,6 @@
 package com.inpi.verify.resource;
 
-import com.inpi.verify.domain.Processo;
+import com.inpi.verify.domain.revista.Processo;
 import com.inpi.verify.service.FilterServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -29,10 +29,6 @@ public class processamentoResouce {
         return ResponseEntity.ok(filterServices.processamento(numeroRevista, uf));
     }
 
-    @GetMapping("/processo/{numeroRevista}/{numeroProcesso}")
-    public ResponseEntity<List<Processo>> getProcessosProcesso(@PathVariable String numeroRevista, @PathVariable Long numeroProcesso) throws JAXBException, IOException {
-        return ResponseEntity.ok(filterServices.processamento(numeroRevista, numeroProcesso));
-    }
 
 
 }

@@ -1,9 +1,8 @@
-package com.inpi.verify.domain;
+package com.inpi.verify.domain.revista;
 
 import lombok.Data;
 
 import javax.xml.bind.annotation.*;
-import java.util.Date;
 import java.util.List;
 
 

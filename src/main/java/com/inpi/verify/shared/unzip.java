@@ -18,9 +18,9 @@ public class unzip {
 
     public static void unzipFile(String numeroRevista) throws IOException {
 
-         final String UNZIPLOCATION = "C:\\Users\\ander\\Desktop\\revistaInpi";
+         final String UNZIPLOCATION = "target";
 
-        String zipFilePath = "C:\\Users\\ander\\Desktop\\" + numeroRevista + ".zip";
+        String zipFilePath = "target\\" + numeroRevista + ".zip";
 
 
         if (!Files.exists(Paths.get(UNZIPLOCATION))) {
